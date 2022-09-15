@@ -1,0 +1,261 @@
+﻿<Page x:Class="Prilojenie.TeamsMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Prilojenie"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TeamsMain">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="139*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="162*"/>
+            <ColumnDefinition Width="125*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock>Eastern</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Width="250"  Orientation="Vertical">
+                            <TextBlock TextAlignment="Center" Text="Atlantic"/>
+                            <ListBox Width="auto"  Height="auto" >
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="20"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Image x:Name="img" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+                                                <Image.Source>
+                                                    <Binding Path="">
+                                                        <Binding.TargetNullValue>
+                                                            <ImageSource>
+                                                                Resources/person.png
+                                                            </ImageSource>
+                                                        </Binding.TargetNullValue>
+                                                    </Binding>
+                                                </Image.Source>
+                                            </Image>
+                                            <TextBox Text="Team name" Grid.Column="1"  Grid.Row="0" Grid.ColumnSpan="2" x:Name="Name"/>
+                                            <TextBox Text="Rost" x:Name="Rost" Grid.Column="1" Grid.Row="1"/>
+                                            <TextBox x:Name="Matchup" Grid.Row="1" Grid.Column="2" />
+                                            <TextBox x:Name="First_Lineup" Grid.Row="1" Grid.Column="3"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Width="250" Orientation="Vertical">
+                            <TextBlock TextAlignment="Center" Text="Center"/>
+                            <ListBox   Height="auto" Width="auto">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="20"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Image x:Name="img" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+                                                <Image.Source>
+                                                    <Binding Path="">
+                                                        <Binding.TargetNullValue>
+                                                            <ImageSource>
+                                                                Resources/person.png
+                                                            </ImageSource>
+                                                        </Binding.TargetNullValue>
+                                                    </Binding>
+                                                </Image.Source>
+                                            </Image>
+                                            <TextBox Text="Team name" Grid.Column="1"  Grid.Row="0" Grid.ColumnSpan="2" x:Name="Name"/>
+                                            <TextBox Text="Rost" x:Name="Rost" Grid.Column="1" Grid.Row="1"/>
+                                            <TextBox x:Name="Matchup" Grid.Row="1" Grid.Column="2" />
+                                            <TextBox x:Name="First_Lineup" Grid.Row="1" Grid.Column="3"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Width="250" Orientation="Vertical">
+                            <TextBlock TextAlignment="Center" Text="Southeast"/>
+                            <ListBox   Height="auto" Width="auto">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="20"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Image x:Name="img" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+                                                <Image.Source>
+                                                    <Binding Path="">
+                                                        <Binding.TargetNullValue>
+                                                            <ImageSource>
+                                                                Resources/person.png
+                                                            </ImageSource>
+                                                        </Binding.TargetNullValue>
+                                                    </Binding>
+                                                </Image.Source>
+                                            </Image>
+                                            <TextBox Text="Team name" Grid.Column="1"  Grid.Row="0" Grid.ColumnSpan="2" x:Name="Name"/>
+                                            <TextBox Text="Rost" x:Name="Rost" Grid.Column="1" Grid.Row="1"/>
+                                            <TextBox x:Name="Matchup" Grid.Row="1" Grid.Column="2" />
+                                            <TextBox x:Name="First_Lineup" Grid.Row="1" Grid.Column="3"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                    </StackPanel>
+
+                </TabItem.Content>
+
+            </TabItem>
+            <TabItem >
+                <TabItem.Header>
+                    <TextBlock>Western</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Width="250" Orientation="Vertical">
+                            <TextBlock TextAlignment="Center" Text="Northwest"/>
+                            <ListBox   Height="auto" Width="auto">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="20"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Image x:Name="img" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+                                                <Image.Source>
+                                                    <Binding Path="">
+                                                        <Binding.TargetNullValue>
+                                                            <ImageSource>
+                                                                Resources/person.png
+                                                            </ImageSource>
+                                                        </Binding.TargetNullValue>
+                                                    </Binding>
+                                                </Image.Source>
+                                            </Image>
+                                            <TextBox Text="Team name" Grid.Column="1"  Grid.Row="0" Grid.ColumnSpan="2" x:Name="Name"/>
+                                            <TextBox Text="Rost" x:Name="Rost" Grid.Column="1" Grid.Row="1"/>
+                                            <TextBox x:Name="Matchup" Grid.Row="1" Grid.Column="2" />
+                                            <TextBox x:Name="First_Lineup" Grid.Row="1" Grid.Column="3"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Width="250" Orientation="Vertical">
+                            <TextBlock TextAlignment="Center" Text="Pacific"/>
+                            <ListBox   Height="auto" Width="auto">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="20"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Image x:Name="img" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+                                                <Image.Source>
+                                                    <Binding Path="">
+                                                        <Binding.TargetNullValue>
+                                                            <ImageSource>
+                                                                Resources/person.png
+                                                            </ImageSource>
+                                                        </Binding.TargetNullValue>
+                                                    </Binding>
+                                                </Image.Source>
+                                            </Image>
+                                            <TextBox Text="Team name" Grid.Column="1"  Grid.Row="0" Grid.ColumnSpan="2" x:Name="Name"/>
+                                            <TextBox Text="Rost" x:Name="Rost" Grid.Column="1" Grid.Row="1"/>
+                                            <TextBox x:Name="Matchup" Grid.Row="1" Grid.Column="2" />
+                                            <TextBox x:Name="First_Lineup" Grid.Row="1" Grid.Column="3"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Width="250" Orientation="Vertical">
+                            <TextBlock TextAlignment="Center" Text="Soutwest"/>
+                            <ListBox   Height="auto" Width="auto">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="20"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Image x:Name="img" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+                                                <Image.Source>
+                                                    <Binding Path="">
+                                                        <Binding.TargetNullValue>
+                                                            <ImageSource>
+                                                                Resources/person.png
+                                                            </ImageSource>
+                                                        </Binding.TargetNullValue>
+                                                    </Binding>
+                                                </Image.Source>
+                                            </Image>
+                                            <TextBox Text="Team name" Grid.Column="1"  Grid.Row="0" Grid.ColumnSpan="2" x:Name="Name"/>
+                                            <TextBox Text="Rost" x:Name="Rost" Grid.Column="1" Grid.Row="1"/>
+                                            <TextBox x:Name="Matchup" Grid.Row="1" Grid.Column="2" />
+                                            <TextBox x:Name="First_Lineup" Grid.Row="1" Grid.Column="3"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                    </StackPanel>
+
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

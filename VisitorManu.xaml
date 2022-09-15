@@ -1,0 +1,25 @@
+﻿<Page x:Class="Prilojenie.VisitorManu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Prilojenie"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="VisitorManu">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="217*"/>
+            <RowDefinition Height="233*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button x:Name="Teams" Click="Teams_Click" Content="Teams" Width="200" Margin="50,80,10,30"/>
+            <Button Content="Players" Width="200" Margin="100,80,10,30"/>
+        </StackPanel>
+             <StackPanel Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button Content="Matchups" Width="200" Margin="50,60,10,60"/>
+            <Button Content="Photo"  Width="200" Margin="100,60,10,60"/>
+        </StackPanel>
+    </Grid>
+</Page>
